@@ -7,7 +7,7 @@
         {
             Random random = new Random();
             secretNumber = random.Next(0, 11); // загадываем число от 0 до 10
-            Console.WriteLine("Игра: Угадай число! У вас есть 3 попытки.");
+            Console.WriteLine("Game: Guess the number! You have 3 attempts.");
 
             
         }
@@ -15,12 +15,12 @@
         {
             if (x == secretNumber)
             {
-                Console.WriteLine("Поздравляем! Вы угадали число.");
+                Console.WriteLine("Congratulations! You guessed the number.");
                 return true;
             }
             else
             {
-                Console.WriteLine("Неверно. Попробуйте ещё раз.");
+                Console.WriteLine("Wrong. Try again.");
                 return false;
             }
         }
