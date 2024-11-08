@@ -9,16 +9,7 @@
             secretNumber = random.Next(0, 11); // загадываем число от 0 до 10
             Console.WriteLine("Игра: Угадай число! У вас есть 3 попытки.");
 
-            for (int i = 0; i < 3; i++)
-            {
-                Console.Write("Введите ваше предположение: ");
-                int userGuess = int.Parse(Console.ReadLine());
-                TryToGuess(userGuess);
-                if (TryToGuess(userGuess))
-                {
-                    break;
-                }
-            }
+            
         }
         static bool TryToGuess(int x)
         {
